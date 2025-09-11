@@ -426,28 +426,28 @@ export default function Index() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {[
               {
-                title: "Research Platform",
+                title: "Edtech Analysis",
                 description:
-                  "A collaborative research platform for managing experiments, data, and publications with real-time collaboration.",
+                  "The insights aim to help EdTech companies enhance user experience, optimize course content, and drive revenue growth.",
                 icon: "🔬",
                 gradient: "from-primary/20 to-accent/20",
-                tags: ["React", "Node.js", "PostgreSQL"],
+                tags: ["Power BI", "Python", "SQL"],
               },
               {
-                title: "ML Code Assistant",
+                title: "Stacking Classifier for Cancer Detection",
                 description:
-                  "An AI-powered code review assistant that provides intelligent suggestions and identifies potential issues.",
+                  " The project utilizes the Breast Cancer Wisconsin (Diagnostic) dataset, a well-known dataset for binary classification tasks, to predict whether a tumor is malignant or benign.",
                 icon: "🤖",
                 gradient: "from-emerald-400/20 to-teal-400/20",
-                tags: ["Python", "TensorFlow", "FastAPI"],
+                tags: ["EDA", "Machine Learning", "FastAPI"],
               },
               {
-                title: "Data Visualization Suite",
+                title: "Profession Analysis",
                 description:
-                  "Interactive data visualization platform for exploring large datasets with real-time analytics capabilities.",
+                  "Interactive data visualization platform for exploring different professions with real-time analytics capabilities.",
                 icon: "📊",
                 gradient: "from-teal-400/20 to-cyan-400/20",
-                tags: ["Vue.js", "D3.js", "Apache Spark"],
+                tags: ["Data Analysis", "Power BI", "Python"],
               },
             ].map((project, index) => (
               <Card
