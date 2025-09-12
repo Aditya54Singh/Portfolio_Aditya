@@ -436,7 +436,7 @@ export default function Index() {
               {
                 title: "Stacking Classifier for Cancer Detection",
                 description:
-                  " The project utilizes the Breast Cancer Wisconsin (Diagnostic) dataset, a well-known dataset for binary classification tasks, to predict whether a tumor is malignant or benign.",
+                  " The project utilizes Wisconsin (Diagnostic) dataset, a well-known dataset for binary classification tasks, to predict whether a tumor is malignant or benign.",
                 icon: "🤖",
                 gradient: "from-emerald-400/20 to-teal-400/20",
                 tags: ["EDA", "Machine Learning", "FastAPI"],
@@ -489,7 +489,7 @@ export default function Index() {
                       className="gradient-blue text-white shadow-blue w-full"
                     >
                       <a
-                        href="https://github.com"
+                        href="https://github.com/Aditya54Singh?tab=repositories"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -737,26 +737,24 @@ export default function Index() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {[
               {
-                title: "AWS Solutions Architect",
+                title: "Exploratory Data Analysis IBM",
                 subtitle: "Professional Level",
                 issued: "March 2024",
-                valid: "March 2027",
                 icon: Award,
                 gradient: "from-orange-400/20 to-red-400/20",
               },
               {
-                title: "Google Cloud ML Engineer",
-                subtitle: "Professional Certification",
+                title: "Database and Databases with Python",
+                subtitle: "Course Certification",
                 issued: "January 2024",
-                valid: "January 2026",
                 icon: Brain,
                 gradient: "from-emerald-400/20 to-teal-400/20",
               },
               {
-                title: "Certified Kubernetes Admin",
-                subtitle: "CNCF Certification",
+                title: "NLP by Infosys",
+                subtitle: "Course Certification",
                 issued: "November 2023",
-                valid: "November 2026",
+                
                 icon: Code,
                 gradient: "from-teal-400/20 to-cyan-400/20",
               },
