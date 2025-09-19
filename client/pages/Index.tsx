@@ -758,30 +758,7 @@ export default function Index() {
                 icon: Code,
                 gradient: "from-teal-400/20 to-cyan-400/20",
               },
-              {
-                title: "PMP Certification",
-                subtitle: "Project Management Professional",
-                issued: "September 2023",
-                valid: "September 2026",
-                icon: BookOpen,
-                gradient: "from-purple-400/20 to-pink-400/20",
-              },
-              {
-                title: "Certified Ethical Hacker",
-                subtitle: "EC-Council CEH",
-                issued: "July 2023",
-                valid: "July 2026",
-                icon: Award,
-                gradient: "from-red-400/20 to-orange-400/20",
-              },
-              {
-                title: "Microsoft Azure Developer",
-                subtitle: "Associate Level",
-                issued: "May 2023",
-                valid: "May 2025",
-                icon: Code,
-                gradient: "from-blue-400/20 to-indigo-400/20",
-              },
+              
             ].map((cert, index) => (
               <Card
                 key={index}
