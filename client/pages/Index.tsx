@@ -783,7 +783,7 @@ export default function Index() {
                 <CardContent className="text-center">
                   <div className="space-y-1 mb-6 text-sm text-muted-foreground">
                     <p>Issued: {cert.issued}</p>
-                    <p>Valid until: {cert.valid}</p>
+                    <p>Valid until: {cert.valid ||  "Lifetime"}</p>
                   </div>
                   <Button
                     variant="outline"
