@@ -742,6 +742,7 @@ export default function Index() {
                 issued: "March 2024",
                 icon: Award,
                 gradient: "from-orange-400/20 to-red-400/20",
+                link: "https://drive.google.com/file/d/1a5aDORB4lhYFuFW-ySQ9AHZBWRkgRgfk/view?usp=drive_link",
               },
               {
                 title: "Database and Databases with Python",
@@ -749,14 +750,15 @@ export default function Index() {
                 issued: "January 2024",
                 icon: Brain,
                 gradient: "from-emerald-400/20 to-teal-400/20",
+                link: "https://drive.google.com/file/d/1hW6rmPwFe9Qg0MoaRdmm1ANCtD6wMnX9/view?usp=drive_link",
               },
               {
                 title: "NLP by Infosys",
                 subtitle: "Course Certification",
                 issued: "November 2023",
-                
                 icon: Code,
                 gradient: "from-teal-400/20 to-cyan-400/20",
+                link: "https://drive.google.com/file/d/13LihJS3I6DVuXnp3gTWoKnhvffMVKarU/view?usp=drive_link",
               },
               
             ].map((cert, index) => (
@@ -790,7 +792,7 @@ export default function Index() {
                     className="glass border-primary/30 hover:border-primary/60 w-full"
                   >
                     <a
-                      href="https://aws.amazon.com"
+                      href={cert.link}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
