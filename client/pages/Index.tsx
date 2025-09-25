@@ -1047,8 +1047,8 @@ export default function Index() {
                   {[
                     {
                       icon: Mail,
-                      text: "alex@example.com",
-                      href: "mailto:alex@example.com",
+                      text: "aditya@gmail.com",
+                      href: "mailto:adit.54singh@gmail.com",
                       label: "Email",
                     },
                     {
