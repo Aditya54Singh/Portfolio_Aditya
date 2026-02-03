@@ -401,407 +401,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section
-        id="projects"
-        className="scroll-mt-28 py-32 relative scroll-fade-in"
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary/30 to-accent/10"></div>
-        <div className="container mx-auto px-6 relative">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 scroll-fade-in">
-              Featured Projects
-            </h2>
-            <div className="w-24 h-1 gradient-blue mx-auto mb-6 scroll-fade-in animation-delay-500 rounded-full"></div>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto scroll-fade-in animation-delay-1000">
-              Practical applications of my research, turning ideas into
-              impactful solutions.
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {[
-              {
-                title: "Edtech Analysis",
-                description:
-                  "The insights aim to help EdTech companies enhance user experience, optimize course content, and drive revenue growth.",
-                icon: "🔬",
-                gradient: "from-primary/20 to-accent/20",
-                tags: ["Power BI", "Python", "SQL"],
-              },
-              {
-                title: "Stacking Classifier for Cancer Detection",
-                description:
-                  " The project utilizes Wisconsin (Diagnostic) dataset, a well-known dataset for binary classification tasks, to predict whether a tumor is malignant or benign.",
-                icon: "🤖",
-                gradient: "from-emerald-400/20 to-teal-400/20",
-                tags: ["EDA", "Machine Learning", "FastAPI"],
-              },
-              {
-                title: "Profession Analysis",
-                description:
-                  "Interactive data visualization platform for exploring different professions with real-time analytics capabilities.",
-                icon: "📊",
-                gradient: "from-teal-400/20 to-cyan-400/20",
-                tags: ["Data Analysis", "Power BI", "Python"],
-              },
-            ].map((project, index) => (
-              <Card
-                key={index}
-                className={`group glass border-primary/20 hover:border-primary/40 shadow-glass hover:shadow-blue-lg transition-all duration-500 hover:scale-105 scroll-scale`}
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <CardHeader>
-                  <div
-                    className={`w-full h-56 bg-gradient-to-br ${project.gradient} rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-300 shadow-glass`}
-                  >
-                    <div className="text-7xl group-hover:scale-110 transition-transform duration-300">
-                      {project.icon}
-                    </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  <CardTitle className="text-2xl font-bold gradient-text-blue">
-                    {project.title}
-                  </CardTitle>
-                  <CardDescription className="text-lg leading-relaxed">
-                    {project.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.tags.map((tag, tagIndex) => (
-                      <span
-                        key={tagIndex}
-                        className="px-3 py-1 glass rounded-full text-sm text-primary border border-primary/20 hover:border-primary/50 transition-colors duration-300"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="flex space-x-4">
-                    <Button
-                      size="sm"
-                      asChild
-                      className="gradient-blue text-white shadow-blue w-full"
-                    >
-                      <a
-                        href="https://github.com/Aditya54Singh?tab=repositories"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github size={16} className="mr-2" />
-                        GitHub
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Publications Section */}
-      <section
-        id="publications"
-        className="scroll-mt-28 py-32 scroll-fade-in relative overflow-hidden"
-      >
-        <div className="absolute inset-0">
-          <div
-            className="absolute inset-0 opacity-20"
-            style={{
-              backgroundImage:
-                "radial-gradient(800px 400px at 50% -10%, hsl(var(--primary) / 0.25), transparent 60%)",
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
-        </div>
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 scroll-fade-in">
-              Research & Publications
-            </h2>
-            <div className="w-24 h-1 gradient-blue mx-auto mb-6 scroll-fade-in animation-delay-500 rounded-full"></div>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto scroll-fade-in animation-delay-1000">
-              My research contributions in machine learning, HCI, and software
-              engineering.
-            </p>
-          </div>
-
-          <div className="max-w-5xl mx-auto space-y-8">
-            {[
-              {
-                title:
-                  "A Systematic Review of Machine Learning Algorithms for Detection of Polycystic Ovary Syndrome (PCOS)",
-                authors: "Aditya Kumar Singh , Deepika Rani",
-                venue:
-                  "International Journal of Innovative Science and Research Technology",
-                description:
-                  "This paper presents a comprehensive analysis of machine learning techniques for automated code review, introducing a novel framework that improves review accuracy by 34%.",
-                icon: FileText,
-                paperLink:
-                  "https://www.ijisrt.com/a-systematic-review-of-machine-learning-algorithms-for-detection-of-polycystic-ovary-syndrome-pcos",
-                codeLink: "https://github.com",
-              },
-              {
-                title:
-                  "Thermal Image Classification under Adverse Conditions using Ensemble Learning",
-                authors: "Aditya Kumar Singh, Akash Choudhary, Deepika Rani",
-                venue:
-                  "ACM Conference on Human Factors in Computing Systems (CHI), 2023",
-                description:
-                  "Enhancing the model abilities to deal with disruptions like fog interference, varying lighting conditions and thermal distortions. In noisy situations the ensemble model showcases accuracy and robustness compared to a Convolutional Neural Network(CNN) baseline model.",
-                icon: Users,
-                paperLink: "https://dl.acm.org",
-                codeLink: "https://github.com",
-              },
-            ].map((pub, index) => (
-              <Card
-                key={index}
-                className={`glass border-primary/20 hover:border-primary/40 shadow-glass hover:shadow-blue-lg transition-all duration-500 hover:scale-[1.02] scroll-fade-in`}
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <CardTitle className="text-left mb-3 text-2xl font-bold gradient-text-blue">
-                        "{pub.title}"
-                      </CardTitle>
-                      <CardDescription className="text-left text-lg">
-                        <strong className="text-primary">
-                          {pub.authors.split(",")[0]}
-                        </strong>
-                        {pub.authors.substring(pub.authors.indexOf(","))}
-                        <br />
-                        <em className="text-muted-foreground">{pub.venue}</em>
-                      </CardDescription>
-                    </div>
-                    <div className="p-3 glass rounded-2xl shadow-glass">
-                      <pub.icon className="text-primary" size={24} />
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-foreground/80 mb-6 text-lg leading-relaxed">
-                    {pub.description}
-                  </p>
-                  <div className="flex space-x-4">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      asChild
-                      className="glass border-primary/30 hover:border-primary/60"
-                    >
-                      <a
-                        href={pub.paperLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FileText size={16} className="mr-2" />
-                        Paper
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Experience Section */}
-      <section
-        id="experience"
-        className="scroll-mt-28 py-32 scroll-fade-in relative overflow-hidden"
-      >
-        <div className="absolute inset-0">
-          <div
-            className="absolute inset-0 opacity-20"
-            style={{
-              backgroundImage:
-                "radial-gradient(700px 400px at -10% 20%, hsl(var(--primary) / 0.18), transparent 60%), radial-gradient(600px 300px at 110% 80%, hsl(var(--accent) / 0.12), transparent 60%)",
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/40"></div>
-        </div>
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 scroll-fade-in">
-              Experience
-            </h2>
-            <div className="w-24 h-1 gradient-blue mx-auto mb-6 scroll-fade-in animation-delay-500 rounded-full"></div>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto scroll-fade-in animation-delay-1000">
-              My professional experience in data science and analytics.
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
-              {[
-                {
-                  title: "Data Science Intern",
-                  company: "Celebal Technologies",
-                  period: "Summer 2025",
-                  description:
-                    "Worked on machine learning projects, data analysis, and model development. Gained hands-on experience with real-world datasets and production ML pipelines.",
-                  icon: Brain,
-                  skills: [
-                    "Python",
-                    "TensorFlow",
-                    "Data Analysis",
-                    "ML Models",
-                  ],
-                },
-                {
-                  title: "Data Analyst Intern",
-                  company: "Summer Camp",
-                  period: "Summer 2024",
-                  description:
-                    "Performed data analysis, created visualizations, and supported business intelligence initiatives. Developed reporting dashboards and data-driven insights.",
-                  icon: Database,
-                  skills: ["SQL", "Pandas", "Seaborn", "Data Visualization"],
-                },
-              ].map((experience, index) => (
-                <Card
-                  key={index}
-                  className="glass border-primary/20 hover:border-primary/40 shadow-glass hover:shadow-blue-lg transition-all duration-500 hover:scale-[1.02] scroll-fade-in"
-                  style={{ animationDelay: `${index * 200}ms` }}
-                >
-                  <CardHeader>
-                    <div className="flex items-start justify-between">
-                      <div className="flex-1">
-                        <CardTitle className="text-2xl font-bold gradient-text-blue mb-2">
-                          {experience.title}
-                        </CardTitle>
-                        <CardDescription className="text-lg mb-4">
-                          <span className="text-primary font-semibold">
-                            {experience.company}
-                          </span>
-                          <span className="text-muted-foreground ml-2">
-                            • {experience.period}
-                          </span>
-                        </CardDescription>
-                      </div>
-                      <div className="p-3 glass rounded-2xl shadow-glass">
-                        <experience.icon className="text-primary" size={24} />
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-foreground/80 mb-6 text-lg leading-relaxed">
-                      {experience.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {experience.skills.map((skill, skillIndex) => (
-                        <span
-                          key={skillIndex}
-                          className="px-3 py-1 glass rounded-full text-sm text-primary border border-primary/20 hover:border-primary/50 transition-colors duration-300"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications Section */}
-      <section
-        id="certifications"
-        className="scroll-mt-28 py-32 scroll-fade-in relative overflow-hidden"
-      >
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 gradient-mesh opacity-5"></div>
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
-        </div>
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 scroll-fade-in">
-              Certifications
-            </h2>
-            <div className="w-24 h-1 gradient-blue mx-auto mb-6 scroll-fade-in animation-delay-500 rounded-full"></div>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto scroll-fade-in animation-delay-1000">
-              Professional certifications and achievements that validate my
-              expertise.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {[
-              {
-                title: "Exploratory Data Analysis IBM",
-                subtitle: "Professional Level",
-                issued: "March 2024",
-                icon: Award,
-                gradient: "from-orange-400/20 to-red-400/20",
-                link: "https://drive.google.com/file/d/1a5aDORB4lhYFuFW-ySQ9AHZBWRkgRgfk/view?usp=drive_link",
-              },
-              {
-                title: "Database and Databases with Python",
-                subtitle: "Course Certification",
-                issued: "January 2024",
-                icon: Brain,
-                gradient: "from-emerald-400/20 to-teal-400/20",
-                link: "https://drive.google.com/file/d/1hW6rmPwFe9Qg0MoaRdmm1ANCtD6wMnX9/view?usp=drive_link",
-              },
-              {
-                title: "NLP by Infosys",
-                subtitle: "Course Certification",
-                issued: "November 2023",
-                icon: Code,
-                gradient: "from-teal-400/20 to-cyan-400/20",
-                link: "https://drive.google.com/file/d/13LihJS3I6DVuXnp3gTWoKnhvffMVKarU/view?usp=drive_link",
-              },
-              
-            ].map((cert, index) => (
-              <Card
-                key={index}
-                className={`glass border-primary/20 hover:border-primary/40 shadow-glass hover:shadow-blue transition-all duration-500 hover:scale-105 scroll-scale`}
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <CardHeader className="text-center pb-4">
-                  <div
-                    className={`w-20 h-20 mx-auto mb-4 bg-gradient-to-br ${cert.gradient} rounded-2xl flex items-center justify-center shadow-glass`}
-                  >
-                    <cert.icon className="text-primary" size={32} />
-                  </div>
-                  <CardTitle className="text-xl font-bold">
-                    {cert.title}
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground">
-                    {cert.subtitle}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <div className="space-y-1 mb-6 text-sm text-muted-foreground">
-                    <p>Issued: {cert.issued}</p>
-                    <p>Valid until: {cert.valid ||  "Lifetime"}</p>
-                  </div>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    asChild
-                    className="glass border-primary/30 hover:border-primary/60 w-full"
-                  >
-                    <a
-                      href={cert.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink size={16} className="mr-2" />
-                      Verify Certificate
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Skills Section */}
       <section
@@ -1003,6 +603,418 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      
+
+      {/* Projects Section */}
+      <section
+        id="projects"
+        className="scroll-mt-28 py-32 relative scroll-fade-in"
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary/30 to-accent/10"></div>
+        <div className="container mx-auto px-6 relative">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 scroll-fade-in">
+              Featured Projects
+            </h2>
+            <div className="w-24 h-1 gradient-blue mx-auto mb-6 scroll-fade-in animation-delay-500 rounded-full"></div>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto scroll-fade-in animation-delay-1000">
+              Practical applications of my research, turning ideas into
+              impactful solutions.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {[
+              {
+                title: "Edtech Analysis",
+                description:
+                  "The insights aim to help EdTech companies enhance user experience, optimize course content, and drive revenue growth.",
+                icon: "🔬",
+                gradient: "from-primary/20 to-accent/20",
+                tags: ["Power BI", "Python", "SQL"],
+              },
+              {
+                title: "Stacking Classifier for Cancer Detection",
+                description:
+                  " The project utilizes Wisconsin (Diagnostic) dataset, a well-known dataset for binary classification tasks, to predict whether a tumor is malignant or benign.",
+                icon: "🤖",
+                gradient: "from-emerald-400/20 to-teal-400/20",
+                tags: ["EDA", "Machine Learning", "FastAPI"],
+              },
+              {
+                title: "Profession Analysis",
+                description:
+                  "Interactive data visualization platform for exploring different professions with real-time analytics capabilities.",
+                icon: "📊",
+                gradient: "from-teal-400/20 to-cyan-400/20",
+                tags: ["Data Analysis", "Power BI", "Python"],
+              },
+            ].map((project, index) => (
+              <Card
+                key={index}
+                className={`group glass border-primary/20 hover:border-primary/40 shadow-glass hover:shadow-blue-lg transition-all duration-500 hover:scale-105 scroll-scale`}
+                style={{ animationDelay: `${index * 200}ms` }}
+              >
+                <CardHeader>
+                  <div
+                    className={`w-full h-56 bg-gradient-to-br ${project.gradient} rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-300 shadow-glass`}
+                  >
+                    <div className="text-7xl group-hover:scale-110 transition-transform duration-300">
+                      {project.icon}
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  <CardTitle className="text-2xl font-bold gradient-text-blue">
+                    {project.title}
+                  </CardTitle>
+                  <CardDescription className="text-lg leading-relaxed">
+                    {project.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.tags.map((tag, tagIndex) => (
+                      <span
+                        key={tagIndex}
+                        className="px-3 py-1 glass rounded-full text-sm text-primary border border-primary/20 hover:border-primary/50 transition-colors duration-300"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex space-x-4">
+                    <Button
+                      size="sm"
+                      asChild
+                      className="gradient-blue text-white shadow-blue w-full"
+                    >
+                      <a
+                        href="https://github.com/Aditya54Singh?tab=repositories"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github size={16} className="mr-2" />
+                        GitHub
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+       {/* Experience Section */}
+      <section
+        id="experience"
+        className="scroll-mt-28 py-32 scroll-fade-in relative overflow-hidden"
+      >
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 opacity-20"
+            style={{
+              backgroundImage:
+                "radial-gradient(700px 400px at -10% 20%, hsl(var(--primary) / 0.18), transparent 60%), radial-gradient(600px 300px at 110% 80%, hsl(var(--accent) / 0.12), transparent 60%)",
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/40"></div>
+        </div>
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 scroll-fade-in">
+              Experience
+            </h2>
+            <div className="w-24 h-1 gradient-blue mx-auto mb-6 scroll-fade-in animation-delay-500 rounded-full"></div>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto scroll-fade-in animation-delay-1000">
+              My professional experience in data science and analytics.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-8">
+              {[
+                {
+                  title: "Data Science Intern",
+                  company: "Celebal Technologies",
+                  period: "Summer 2025",
+                  description:
+                    "Worked on machine learning projects, data analysis, and model development. Gained hands-on experience with real-world datasets and production ML pipelines.",
+                  icon: Brain,
+                  skills: [
+                    "Python",
+                    "TensorFlow",
+                    "Data Analysis",
+                    "ML Models",
+                  ],
+                },
+                {
+                  title: "Data Analyst Intern",
+                  company: "Summer Camp",
+                  period: "Summer 2024",
+                  description:
+                    "Performed data analysis, created visualizations, and supported business intelligence initiatives. Developed reporting dashboards and data-driven insights.",
+                  icon: Database,
+                  skills: ["SQL", "Pandas", "Seaborn", "Data Visualization"],
+                },
+              ].map((experience, index) => (
+                <Card
+                  key={index}
+                  className="glass border-primary/20 hover:border-primary/40 shadow-glass hover:shadow-blue-lg transition-all duration-500 hover:scale-[1.02] scroll-fade-in"
+                  style={{ animationDelay: `${index * 200}ms` }}
+                >
+                  <CardHeader>
+                    <div className="flex items-start justify-between">
+                      <div className="flex-1">
+                        <CardTitle className="text-2xl font-bold gradient-text-blue mb-2">
+                          {experience.title}
+                        </CardTitle>
+                        <CardDescription className="text-lg mb-4">
+                          <span className="text-primary font-semibold">
+                            {experience.company}
+                          </span>
+                          <span className="text-muted-foreground ml-2">
+                            • {experience.period}
+                          </span>
+                        </CardDescription>
+                      </div>
+                      <div className="p-3 glass rounded-2xl shadow-glass">
+                        <experience.icon className="text-primary" size={24} />
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-foreground/80 mb-6 text-lg leading-relaxed">
+                      {experience.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {experience.skills.map((skill, skillIndex) => (
+                        <span
+                          key={skillIndex}
+                          className="px-3 py-1 glass rounded-full text-sm text-primary border border-primary/20 hover:border-primary/50 transition-colors duration-300"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+      {/* Publications Section */}
+      <section
+        id="publications"
+        className="scroll-mt-28 py-32 scroll-fade-in relative overflow-hidden"
+      >
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 opacity-20"
+            style={{
+              backgroundImage:
+                "radial-gradient(800px 400px at 50% -10%, hsl(var(--primary) / 0.25), transparent 60%)",
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
+        </div>
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 scroll-fade-in">
+              Research & Publications
+            </h2>
+            <div className="w-24 h-1 gradient-blue mx-auto mb-6 scroll-fade-in animation-delay-500 rounded-full"></div>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto scroll-fade-in animation-delay-1000">
+              My research contributions in machine learning, HCI, and software
+              engineering.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto space-y-8">
+            {[
+              {
+                title:
+                  "A Systematic Review of Machine Learning Algorithms for Detection of Polycystic Ovary Syndrome (PCOS)",
+                authors: "Aditya Kumar Singh , Deepika Rani",
+                venue:
+                  "International Journal of Innovative Science and Research Technology",
+                description:
+                  "This paper presents a comprehensive analysis of machine learning techniques for automated code review, introducing a novel framework that improves review accuracy by 34%.",
+                icon: FileText,
+                paperLink:
+                  "https://www.ijisrt.com/a-systematic-review-of-machine-learning-algorithms-for-detection-of-polycystic-ovary-syndrome-pcos",
+                codeLink: "https://github.com",
+              },
+              {
+                title:
+                  "Thermal Image Classification under Adverse Conditions using Ensemble Learning",
+                authors: "Aditya Kumar Singh, Akash Choudhary, Deepika Rani",
+                venue:
+                  "ACM Conference on Human Factors in Computing Systems (CHI), 2023",
+                description:
+                  "Enhancing the model abilities to deal with disruptions like fog interference, varying lighting conditions and thermal distortions. In noisy situations the ensemble model showcases accuracy and robustness compared to a Convolutional Neural Network(CNN) baseline model.",
+                icon: Users,
+                paperLink: "https://dl.acm.org",
+                codeLink: "https://github.com",
+              },
+            ].map((pub, index) => (
+              <Card
+                key={index}
+                className={`glass border-primary/20 hover:border-primary/40 shadow-glass hover:shadow-blue-lg transition-all duration-500 hover:scale-[1.02] scroll-fade-in`}
+                style={{ animationDelay: `${index * 200}ms` }}
+              >
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <div className="flex-1">
+                      <CardTitle className="text-left mb-3 text-2xl font-bold gradient-text-blue">
+                        "{pub.title}"
+                      </CardTitle>
+                      <CardDescription className="text-left text-lg">
+                        <strong className="text-primary">
+                          {pub.authors.split(",")[0]}
+                        </strong>
+                        {pub.authors.substring(pub.authors.indexOf(","))}
+                        <br />
+                        <em className="text-muted-foreground">{pub.venue}</em>
+                      </CardDescription>
+                    </div>
+                    <div className="p-3 glass rounded-2xl shadow-glass">
+                      <pub.icon className="text-primary" size={24} />
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-foreground/80 mb-6 text-lg leading-relaxed">
+                    {pub.description}
+                  </p>
+                  <div className="flex space-x-4">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      asChild
+                      className="glass border-primary/30 hover:border-primary/60"
+                    >
+                      <a
+                        href={pub.paperLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FileText size={16} className="mr-2" />
+                        Paper
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+     
+
+      {/* Certifications Section */}
+      <section
+        id="certifications"
+        className="scroll-mt-28 py-32 scroll-fade-in relative overflow-hidden"
+      >
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 gradient-mesh opacity-5"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
+        </div>
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 scroll-fade-in">
+              Certifications
+            </h2>
+            <div className="w-24 h-1 gradient-blue mx-auto mb-6 scroll-fade-in animation-delay-500 rounded-full"></div>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto scroll-fade-in animation-delay-1000">
+              Professional certifications and achievements that validate my
+              expertise.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {[
+              {
+                title: "IBM Professional Data Analyst",
+                subtitle: "Course Certification",
+                issued: "November 2025",
+                icon: Brain,
+                gradient: "from-emerald-400/20 to-teal-400/20",
+                link: "https://drive.google.com/file/d/1hW6rmPwFe9Qg0MoaRdmm1ANCtD6wMnX9/view?usp=drive_link",
+              },
+              {
+                title: "Exploratory Data Analysis IBM",
+                subtitle: "Professional Level",
+                issued: "March 2024",
+                icon: Award,
+                gradient: "from-orange-400/20 to-red-400/20",
+                link: "https://drive.google.com/file/d/1QDQv47eD0-RXxJLPIL3-JKMOn91M1BYk/view?usp=drive_link",
+              },
+              
+              {
+                title: "NLP by Infosys",
+                subtitle: "Course Certification",
+                issued: "November 2023",
+                icon: Code,
+                gradient: "from-teal-400/20 to-cyan-400/20",
+                link: "https://drive.google.com/file/d/13LihJS3I6DVuXnp3gTWoKnhvffMVKarU/view?usp=drive_link",
+              },
+              
+            ].map((cert, index) => (
+              <Card
+                key={index}
+                className={`glass border-primary/20 hover:border-primary/40 shadow-glass hover:shadow-blue transition-all duration-500 hover:scale-105 scroll-scale`}
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <CardHeader className="text-center pb-4">
+                  <div
+                    className={`w-20 h-20 mx-auto mb-4 bg-gradient-to-br ${cert.gradient} rounded-2xl flex items-center justify-center shadow-glass`}
+                  >
+                    <cert.icon className="text-primary" size={32} />
+                  </div>
+                  <CardTitle className="text-xl font-bold">
+                    {cert.title}
+                  </CardTitle>
+                  <CardDescription className="text-muted-foreground">
+                    {cert.subtitle}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <div className="space-y-1 mb-6 text-sm text-muted-foreground">
+                    <p>Issued: {cert.issued}</p>
+                    <p>Valid until: {cert.valid ||  "Lifetime"}</p>
+                  </div>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="glass border-primary/30 hover:border-primary/60 w-full"
+                  >
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink size={16} className="mr-2" />
+                      Verify Certificate
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      
 
       {/* Connect Section */}
       <section
