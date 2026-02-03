@@ -229,10 +229,9 @@ export default function Index() {
           </p>
 
           <p className="text-lg text-foreground/70 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in-up animation-delay-1500">
-            Bridging the gap between cutting-edge research and real-world
-            technology solutions. I create innovative applications that push the
-            boundaries of what's possible, with a passion for research, clean
-            architecture, and meaningful impact through technology.
+            Data Science practitioner focused on converting research and data into production-ready solutions. 
+            Experienced in machine learning, analytics, and end-to-end application development, with a strong emphasis on clean architecture,
+            interpretability, and real-world impact.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in-up animation-delay-2000">
@@ -350,10 +349,7 @@ export default function Index() {
                           <div className="w-2 h-2 gradient-blue rounded-full mr-3"></div>
                           Machine Learning
                         </li>
-                        <li className="flex items-center">
-                          <div className="w-2 h-2 gradient-blue rounded-full mr-3"></div>
-                          OpenCV
-                        </li>
+                        
                         <li className="flex items-center">
                           <div className="w-2 h-2 gradient-blue rounded-full mr-3"></div>
                           Data Science
@@ -857,7 +853,7 @@ export default function Index() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-6 mb-16">
-                {["DSA", "ML", "DL", "Data Science", "Data Analysis"].map(
+                {["DSA", "ML", "Frontend", "Data Science", "Data Analysis"].map(
                   (skill, index) => (
                     <div
                       key={index}
@@ -904,23 +900,23 @@ export default function Index() {
                     logo: "https://cdn.simpleicons.org/cplusplus/00599C",
                   },
                   {
-                    name: "PyTorch",
-                    logo: "https://cdn.simpleicons.org/pytorch/EE4C2C",
-                  },
+  name: "React",
+  logo: "https://cdn.simpleicons.org/react/61DAFB",
+},
                   {
-                    name: "SQL (PostgreSQL)",
+                    name: "MYSQL / DBMS",
                     logo: "https://cdn.simpleicons.org/postgresql/4169E1",
                   },
                   {
                     name: "Pandas",
                     logo: "https://cdn.simpleicons.org/pandas/150458",
                   },
+                 {
+  name: "Tailwind CSS",
+  logo: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+},
                   {
-                    name: "OpenCV",
-                    logo: "https://cdn.simpleicons.org/opencv/5C3EE8",
-                  },
-                  {
-                    name: "FastAPI",
+                    name: "Flask",
                     logo: "https://cdn.simpleicons.org/fastapi/009688",
                   },
                   {
@@ -932,9 +928,9 @@ export default function Index() {
                     logo: "https://cdn.simpleicons.org/github/ffffff",
                   },
                   {
-                    name: "DBMS (MySQL)",
-                    logo: "https://cdn.simpleicons.org/mysql/4479A1",
-                  },
+  name: "JavaScript",
+  logo: "https://cdn.simpleicons.org/javascript/F7DF1E",
+},
                 ].map((skill, index) => (
                   <div
                     key={index}
@@ -957,18 +953,24 @@ export default function Index() {
 
             {/* Skill Categories - Minimalist */}
             <div className="mt-20 scroll-fade-in animation-delay-1000">
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-4 gap-8">
                 {[
                   {
                     title: "Data Science",
                     icon: "🔬",
-                    description: "ML, DL, Data Analysis",
+                    description: "EDA, ML, Data Analysis",
                     accent: "from-blue-500/20 to-cyan-500/20",
                   },
                   {
                     title: "Programming",
                     icon: "💻",
                     description: "Python, C++, Algorithms",
+                    accent: "from-purple-500/20 to-pink-500/20",
+                  },
+                  {
+                    title: "Web Technology",
+                    icon: "💻",
+                    description: "React, JavaScript, Tailwind CSS, Flask",
                     accent: "from-purple-500/20 to-pink-500/20",
                   },
                   {
