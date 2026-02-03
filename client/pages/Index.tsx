@@ -503,6 +503,14 @@ export default function Index() {
   name: "React",
   logo: "https://cdn.simpleicons.org/react/61DAFB",
 },
+                 {
+  name: "Tailwind CSS",
+  logo: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+},
+                  {
+  name: "JavaScript",
+  logo: "https://cdn.simpleicons.org/javascript/F7DF1E",
+},
                   {
                     name: "MYSQL / DBMS",
                     logo: "https://cdn.simpleicons.org/postgresql/4169E1",
@@ -511,9 +519,10 @@ export default function Index() {
                     name: "Pandas",
                     logo: "https://cdn.simpleicons.org/pandas/150458",
                   },
-                 {
-  name: "Tailwind CSS",
-  logo: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+                
+                  {
+  name: "Power BI",
+  logo: "https://cdn.simpleicons.org/powerbi/F2C811",
 },
                   {
                     name: "Flask",
@@ -527,10 +536,8 @@ export default function Index() {
                     name: "GitHub",
                     logo: "https://cdn.simpleicons.org/github/ffffff",
                   },
-                  {
-  name: "JavaScript",
-  logo: "https://cdn.simpleicons.org/javascript/F7DF1E",
-},
+                  
+                
                 ].map((skill, index) => (
                   <div
                     key={index}
@@ -570,13 +577,13 @@ export default function Index() {
                   {
                     title: "Web Technology",
                     icon: "💻",
-                    description: "React, JavaScript, Tailwind CSS, Flask",
+                    description: "React, JavaScript, Tailwind CSS, Flask, Mysql",
                     accent: "from-purple-500/20 to-pink-500/20",
                   },
                   {
                     title: "Tools & Frameworks",
                     icon: "🛠️",
-                    description: "TensorFlow, PyTorch, APIs",
+                    description: "Vite, Power BI, Render, Postman",
                     accent: "from-emerald-500/20 to-teal-500/20",
                   },
                 ].map((category, index) => (
@@ -948,7 +955,7 @@ export default function Index() {
                 issued: "November 2025",
                 icon: Brain,
                 gradient: "from-emerald-400/20 to-teal-400/20",
-                link: "https://drive.google.com/file/d/1hW6rmPwFe9Qg0MoaRdmm1ANCtD6wMnX9/view?usp=drive_link",
+                link: "https://drive.google.com/file/d/1QDQv47eD0-RXxJLPIL3-JKMOn91M1BYk/view?usp=drive_link",
               },
               {
                 title: "Exploratory Data Analysis IBM",
@@ -956,7 +963,7 @@ export default function Index() {
                 issued: "March 2024",
                 icon: Award,
                 gradient: "from-orange-400/20 to-red-400/20",
-                link: "https://drive.google.com/file/d/1QDQv47eD0-RXxJLPIL3-JKMOn91M1BYk/view?usp=drive_link",
+                link: "https://drive.google.com/file/d/1a5aDORB4lhYFuFW-ySQ9AHZBWRkgRgfk/view?usp=drive_link",
               },
               
               {
