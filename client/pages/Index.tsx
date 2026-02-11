@@ -615,103 +615,137 @@ export default function Index() {
 
       {/* Projects Section */}
       <section
-        id="projects"
-        className="scroll-mt-28 py-32 relative scroll-fade-in"
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary/30 to-accent/10"></div>
-        <div className="container mx-auto px-6 relative">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 scroll-fade-in">
-              Featured Projects
-            </h2>
-            <div className="w-24 h-1 gradient-blue mx-auto mb-6 scroll-fade-in animation-delay-500 rounded-full"></div>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto scroll-fade-in animation-delay-1000">
-              Practical applications of my research, turning ideas into
-              impactful solutions.
-            </p>
-          </div>
+  id="projects"
+  className="scroll-mt-28 py-32 relative scroll-fade-in"
+>
+  <div className="absolute inset-0 bg-gradient-to-br from-secondary/30 to-accent/10"></div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {[
-              {
-                title: "Edtech Analysis",
-                description:
-                  "The insights aim to help EdTech companies enhance user experience, optimize course content, and drive revenue growth.",
-                icon: "🔬",
-                gradient: "from-primary/20 to-accent/20",
-                tags: ["Power BI", "Python", "SQL"],
-              },
-              {
-                title: "Stacking Classifier for Cancer Detection",
-                description:
-                  " The project utilizes Wisconsin (Diagnostic) dataset, a well-known dataset for binary classification tasks, to predict whether a tumor is malignant or benign.",
-                icon: "🤖",
-                gradient: "from-emerald-400/20 to-teal-400/20",
-                tags: ["EDA", "Machine Learning", "FastAPI"],
-              },
-              {
-                title: "Profession Analysis",
-                description:
-                  "Interactive data visualization platform for exploring different professions with real-time analytics capabilities.",
-                icon: "📊",
-                gradient: "from-teal-400/20 to-cyan-400/20",
-                tags: ["Data Analysis", "Power BI", "Python"],
-              },
-            ].map((project, index) => (
-              <Card
-                key={index}
-                className={`group glass border-primary/20 hover:border-primary/40 shadow-glass hover:shadow-blue-lg transition-all duration-500 hover:scale-105 scroll-scale`}
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <CardHeader>
-                  <div
-                    className={`w-full h-56 bg-gradient-to-br ${project.gradient} rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-300 shadow-glass`}
+  <div className="container mx-auto px-6 relative">
+    <div className="text-center mb-20">
+      <h2 className="text-5xl md:text-6xl font-bold mb-6">
+        Featured Projects
+      </h2>
+      <div className="w-24 h-1 gradient-blue mx-auto mb-6 rounded-full"></div>
+      <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        Production-ready full-stack and machine learning systems deployed on cloud infrastructure.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      {[
+        // 🎵 SPOTIFY PROJECT
+        {
+          title: "Spotify-Inspired Full-Stack Music Player",
+          description:
+            "Production-ready music streaming web app with authentication, playlist management, real-time audio playback, and REST API integration. Deployed using Netlify, Render, and Railway.",
+          icon: "🎵",
+          gradient: "from-green-400/20 to-emerald-400/20",
+          tags: ["React", "Flask", "MySQL", "JWT Auth", "Cloud Deployment"],
+          liveDemo: "https://spotifyclon3.netlify.app/",
+          github: "https://github.com/Aditya54Singh/spotify-clone",
+        },
+
+        // 🧠 CUSTOMER SEGMENTATION
+        {
+          title: "Customer Intelligence & Segmentation System",
+          description:
+            "Cloud-deployed ML-powered segmentation platform enabling dynamic customer clustering using K-Means and PCA, with interactive insights dashboard.",
+          icon: "🧠",
+          gradient: "from-indigo-400/20 to-blue-400/20",
+          tags: ["React", "Flask", "Machine Learning", "PCA", "Cloud"],
+          liveDemo: "https://bucolic-tanuki-675bc7.netlify.app/",
+          github: "https://github.com/Aditya54Singh/Customer_segmentation",
+        },
+
+        // 🤖 CANCER DETECTION
+        {
+          title: "Stacking Classifier for Cancer Detection",
+          description:
+            "Ensemble stacking classifier built on the Wisconsin Diagnostic dataset to predict malignant vs benign tumors, with feature engineering and evaluation pipeline.",
+          icon: "🤖",
+          gradient: "from-emerald-400/20 to-teal-400/20",
+          tags: ["Machine Learning", "EDA", "FastAPI", "Scikit-Learn"],
+          github: "https://github.com/YOUR_USERNAME/cancer-detection-project",
+        },
+      ].map((project, index) => (
+        <Card
+          key={index}
+          className="group glass border-primary/20 hover:border-primary/40 shadow-glass hover:shadow-blue-lg transition-all duration-500 hover:scale-105"
+        >
+          <CardHeader>
+            <div
+              className={`w-full h-56 bg-gradient-to-br ${project.gradient} rounded-2xl mb-6 flex items-center justify-center`}
+            >
+              <div className="text-7xl">
+                {project.icon}
+              </div>
+            </div>
+
+            <CardTitle className="text-2xl font-bold gradient-text-blue">
+              {project.title}
+            </CardTitle>
+
+            <CardDescription className="text-lg leading-relaxed">
+              {project.description}
+            </CardDescription>
+          </CardHeader>
+
+          <CardContent>
+            <div className="flex flex-wrap gap-2 mb-6">
+              {project.tags.map((tag, tagIndex) => (
+                <span
+                  key={tagIndex}
+                  className="px-3 py-1 glass rounded-full text-sm text-primary border border-primary/20"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            {/* Buttons */}
+            <div className="flex space-x-4">
+
+              {project.liveDemo && (
+                <Button
+                  size="sm"
+                  asChild
+                  className="gradient-blue text-white shadow-blue w-full"
+                >
+                  <a
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <div className="text-7xl group-hover:scale-110 transition-transform duration-300">
-                      {project.icon}
-                    </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  <CardTitle className="text-2xl font-bold gradient-text-blue">
-                    {project.title}
-                  </CardTitle>
-                  <CardDescription className="text-lg leading-relaxed">
-                    {project.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.tags.map((tag, tagIndex) => (
-                      <span
-                        key={tagIndex}
-                        className="px-3 py-1 glass rounded-full text-sm text-primary border border-primary/20 hover:border-primary/50 transition-colors duration-300"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="flex space-x-4">
-                    <Button
-                      size="sm"
-                      asChild
-                      className="gradient-blue text-white shadow-blue w-full"
-                    >
-                      <a
-                        href="https://github.com/Aditya54Singh?tab=repositories"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github size={16} className="mr-2" />
-                        GitHub
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+                    🚀 Live Demo
+                  </a>
+                </Button>
+              )}
+
+              {project.github && (
+                <Button
+                  size="sm"
+                  variant="outline"
+                  asChild
+                  className="w-full"
+                >
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    💻 GitHub
+                  </a>
+                </Button>
+              )}
+
+            </div>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+
 
 
        {/* Experience Section */}
