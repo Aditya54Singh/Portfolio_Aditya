@@ -649,8 +649,8 @@ export default function Index() {
       "Scikit-Learn",
       "Cloud Deployment",
     ],
-    liveDemo: "https://your-netlify-url",
-    github: "https://github.com/Aditya54Singh/hackmatch",
+    liveDemo: "https://hackmatch54.netlify.app/",
+    github: "https://github.com/Aditya54Singh/HackMatch",
   },
 
   // 🎵 SPOTIFY PROJECT
