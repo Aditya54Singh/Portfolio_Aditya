@@ -637,7 +637,7 @@ export default function Index() {
   {
     title: "HackMatch – ML-Powered Hackathon Discovery Platform",
     description:
-      "Production-deployed full-stack platform enabling users to discover, create, and join hackathons with JWT authentication, PostgreSQL schema design, and Random Forest–based spam detection integrated into a Flask REST API.",
+      "Production-deployed full-stack platform enabling users to discover, create, join hackathons with JWT authentication, PostgreSQL schema design, Random Forest–based spam detection integrated into a Flask REST API.",
     icon: "🚀",
     gradient: "from-blue-400/20 to-cyan-400/20",
     tags: [
