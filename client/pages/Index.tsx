@@ -633,41 +633,62 @@ export default function Index() {
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
       {[
-        // 🎵 SPOTIFY PROJECT
-        {
-          title: "Spotify-Inspired Full-Stack Music Player",
-          description:
-            "Production-ready music streaming web app with authentication, playlist management, real-time audio playback, and REST API integration. Deployed using Netlify, Render, and Railway.",
-          icon: "🎵",
-          gradient: "from-green-400/20 to-emerald-400/20",
-          tags: ["React", "Flask", "MySQL", "JWT Auth", "Cloud Deployment"],
-          liveDemo: "https://spotifyclon3.netlify.app/",
-          github: "https://github.com/Aditya54Singh/spotify-clone",
-        },
+  // 🚀 HACKMATCH (NEW - MOST ADVANCED)
+  {
+    title: "HackMatch – ML-Powered Hackathon Discovery Platform",
+    description:
+      "Production-deployed full-stack platform enabling users to discover, create, and join hackathons with JWT authentication, PostgreSQL schema design, and Random Forest–based spam detection integrated into a Flask REST API.",
+    icon: "🚀",
+    gradient: "from-blue-400/20 to-cyan-400/20",
+    tags: [
+      "React",
+      "Flask",
+      "PostgreSQL",
+      "JWT Auth",
+      "Random Forest",
+      "Scikit-Learn",
+      "Cloud Deployment",
+    ],
+    liveDemo: "https://your-netlify-url",
+    github: "https://github.com/Aditya54Singh/hackmatch",
+  },
 
-        // 🧠 CUSTOMER SEGMENTATION
-        {
-          title: "Customer Intelligence & Segmentation System",
-          description:
-            "Cloud-deployed ML-powered segmentation platform enabling dynamic customer clustering using K-Means and PCA, with interactive insights dashboard.",
-          icon: "🧠",
-          gradient: "from-indigo-400/20 to-blue-400/20",
-          tags: ["React", "Flask", "Machine Learning", "PCA", "Cloud"],
-          liveDemo: "https://bucolic-tanuki-675bc7.netlify.app/",
-          github: "https://github.com/Aditya54Singh/Customer_segmentation",
-        },
+  // 🎵 SPOTIFY PROJECT
+  {
+    title: "Spotify-Inspired Full-Stack Music Player",
+    description:
+      "Production-ready music streaming web app with authentication, playlist management, real-time audio playback, and REST API integration. Deployed using Netlify, Render, and Railway.",
+    icon: "🎵",
+    gradient: "from-green-400/20 to-emerald-400/20",
+    tags: ["React", "Flask", "MySQL", "JWT Auth", "Cloud Deployment"],
+    liveDemo: "https://spotifyclon3.netlify.app/",
+    github: "https://github.com/Aditya54Singh/spotify-clone",
+  },
 
-        // 🤖 CANCER DETECTION
-        {
-          title: "Stacking Classifier for Cancer Detection",
-          description:
-            "Ensemble stacking classifier built on the Wisconsin Diagnostic dataset to predict malignant vs benign tumors, with feature engineering and evaluation pipeline.",
-          icon: "🤖",
-          gradient: "from-emerald-400/20 to-teal-400/20",
-          tags: ["Machine Learning", "EDA", "FastAPI", "Scikit-Learn"],
-          github: "https://github.com/YOUR_USERNAME/cancer-detection-project",
-        },
-      ].map((project, index) => (
+  // 🧠 CUSTOMER SEGMENTATION
+  {
+    title: "Customer Intelligence & Segmentation System",
+    description:
+      "Cloud-deployed ML-powered segmentation platform enabling dynamic customer clustering using K-Means and PCA, with interactive insights dashboard.",
+    icon: "🧠",
+    gradient: "from-indigo-400/20 to-blue-400/20",
+    tags: ["React", "Flask", "Machine Learning", "PCA", "Cloud"],
+    liveDemo: "https://bucolic-tanuki-675bc7.netlify.app/",
+    github: "https://github.com/Aditya54Singh/Customer_segmentation",
+  },
+
+  // 🤖 CANCER DETECTION
+  {
+    title: "Stacking Classifier for Cancer Detection",
+    description:
+      "Ensemble stacking classifier built on the Wisconsin Diagnostic dataset to predict malignant vs benign tumors, with feature engineering and evaluation pipeline.",
+    icon: "🤖",
+    gradient: "from-emerald-400/20 to-teal-400/20",
+    tags: ["Machine Learning", "EDA", "FastAPI", "Scikit-Learn"],
+    github: "https://github.com/YOUR_USERNAME/cancer-detection-project",
+  },
+]
+.map((project, index) => (
         <Card
           key={index}
           className="group glass border-primary/20 hover:border-primary/40 shadow-glass hover:shadow-blue-lg transition-all duration-500 hover:scale-105"
